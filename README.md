@@ -2,6 +2,11 @@ MLOPS PRODUCTION READY PROJECT- US VISA APPROVAL
 
 
 
+FlowChart  -  Whimsical
+MLops tool - evident ai
+Databse    -    MongoDB
+
+
 #Git Commands
 ```bash
 git add.

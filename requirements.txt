@@ -6,20 +6,24 @@ plotly
 seaborn
 scipy
 scikit-learn
-imblearn
+imbalanced-learn
 xgboost
 catboost
 pymongo
 from_root
 evidently==0.2.8
 dill
-pyYAML
+pyyaml
 neuro_mf
-boto3
-mypy-boto3-s3
-botocore
+
+# AWS stack (Python 3.8 compatible)
+boto3<1.34
+botocore<1.34
+mypy-boto3-s3<1.34
+
 fastapi
 uvicorn
 jinja2
 python-multipart
+
 -e .
