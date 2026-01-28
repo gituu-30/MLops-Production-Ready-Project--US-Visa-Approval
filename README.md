@@ -3,7 +3,7 @@ MLOPS PRODUCTION READY PROJECT- US VISA APPROVAL
 
 
 FlowChart  -  Whimsical
-MLops tool - evident ai
+MLops tool - evidently ai
 Databse    -    MongoDB
 
 
@@ -27,3 +27,6 @@ conda activate visa
 ```bash
 pip install -r requirements.txt
 ```
+
+# Data Link
+https://www.kaggle.com/datasets/moro23/easyvisa-dataset?resource=download
