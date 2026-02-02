@@ -7,6 +7,10 @@ MLops tool - evidently ai
 Databse    -    MongoDB
 
 
+# Data Link
+https://www.kaggle.com/datasets/moro23/easyvisa-dataset?resource=download
+
+
 #Git Commands
 ```bash
 git add.
@@ -27,6 +31,9 @@ conda activate visa
 ```bash
 pip install -r requirements.txt
 ```
+## Workflow
 
-# Data Link
-https://www.kaggle.com/datasets/moro23/easyvisa-dataset?resource=download
+1.constants
+2.entity
+3.Components
+4.pipeline
