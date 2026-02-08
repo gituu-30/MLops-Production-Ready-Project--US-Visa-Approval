@@ -6,7 +6,7 @@ import dill
 import yaml
 from pandas import DataFrame
 
-from us_visa .exception import USVisaException
+from us_visa.exception import USvisaException
 from us_visa.logger import logging
 
 
@@ -17,7 +17,7 @@ def read_yaml_file(file_path: str) -> dict:
             return yaml.safe_load(yaml_file)
         
     except Exception as e:
-        raise USVisaException(e,sys) from e
+        raise USvisaException(e,sys) from e
     
 def write_yaml_file(file_path: str, content: object, replace: bool = False) -> None:
     try:
@@ -28,7 +28,7 @@ def write_yaml_file(file_path: str, content: object, replace: bool = False) -> N
         with open(file_path, "w") as file:
                 yaml.dump(content, file)
     except Exception as e:
-        raise USVisaException(e, sys) from e
+        raise USvisaException(e, sys) from e
 
 def load_object(file_path: str) -> object:
         logging.info(f"Entered the load_object method of utils")
@@ -40,7 +40,7 @@ def load_object(file_path: str) -> object:
             return obj
         
         except Exception as e:
-            raise USVisaException(e, sys) from e
+            raise USvisaException(e, sys) from e
         
 
 def save_numpy_array_data(file_path: str, array: np.array) -> None:
@@ -55,7 +55,7 @@ def save_numpy_array_data(file_path: str, array: np.array) -> None:
                 with open(file_path, "wb") as file_obj:
                     np.save(file_obj, array)
             except Exception as e:
-                raise USVisaException(e, sys) from e   
+                raise USvisaException(e, sys) from e   
             
 
 def load_numpy_array_data(file_path: str) -> np.array:
@@ -69,7 +69,7 @@ def load_numpy_array_data(file_path: str) -> np.array:
                     array = np.load(file_obj)
                 return array
             except Exception as e:
-                raise USVisaException(e, sys) from e
+                raise USvisaException(e, sys) from e
      
 def save_object(file_path: str, obj: object) -> None:
     logging.info(f"Entered the save_object method of utils")
@@ -79,7 +79,7 @@ def save_object(file_path: str, obj: object) -> None:
             dill.dump(obj, file_obj)
         logging.info(f"Exited the save_object method of utils")
     except Exception as e:
-        raise USVisaException(e, sys) from e
+        raise USvisaException(e, sys) from e
     
 def drop_columns(df: DataFrame, cols: list) -> DataFrame:
     """""
@@ -94,5 +94,5 @@ def drop_columns(df: DataFrame, cols: list) -> DataFrame:
         logging.info("Exit drop_columns method of utils")
         return df
     except Exception as e:
-        raise USVisaException(e, sys) from e
+        raise USvisaException(e, sys) from e
     
