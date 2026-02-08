@@ -38,3 +38,14 @@ pip install -r requirements.txt
 3.Components
 4.pipeline
 5.Main file
+
+
+
+
+## Export the environment variable
+
+export MONGODB_URL="mongodb+srv://<username>:<password>...."
+
+export AWS_ACCESS_KEY_ID=<acessid>
+
+export AWS_SECRET_ACCESS_KEY=<acesskey>
